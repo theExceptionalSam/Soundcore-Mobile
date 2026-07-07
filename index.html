@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Soundcore Studio Limited | Music, Podcast &amp; Content Production — Ilorin</title>
+<meta name="description" content="Soundcore Studio Limited is a creative production studio in Ilorin, Kwara State, rooted in African culture and driven by global standards — music recording, mixing &amp; mastering, podcast production, live sessions and content shooting." />
+<meta name="keywords" content="Soundcore Studio, music production Ilorin, recording studio Nigeria, podcast studio Kwara, mixing and mastering, live session recording" />
+<meta name="theme-color" content="#0b0b0c" />
+<meta name="author" content="Soundcore Studio Limited" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Soundcore Studio Limited | Capture The Core Of Your Sound" />
+<meta property="og:description" content="Music recording, mixing &amp; mastering, podcast production, live sessions and content shooting — from the core, for the world." />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_NG" />
+<meta property="og:image" content="img/hero-studio.jpg" />
+
+<!-- ══════════════════════════════════════════════════════════════
+     SECURITY GUARDRAILS (front-end layer)
+     - Content-Security-Policy: locks script/style/font/img/frame
+       sources down to this document + Google Fonts + YouTube embeds
+       + the Formspree origin (for the contact form).
+       No inline script execution beyond this document, no remote
+       script hosts, no plugins/objects.
+       Honest caveat: 'unsafe-inline' is allowed for script-src and
+       style-src because this is intentionally a single, portable
+       HTML file with its CSS/JS inline. That's a reasonable trade
+       for a static brochure site, but it does weaken CSP's main
+       defence against injected scripts. If this ever accepts
+       user-generated content or grows a backend, split the CSS/JS
+       into external files and switch to a nonce- or hash-based CSP
+       instead of 'unsafe-inline'.
+       connect-src/form-action allow the formspree.io ORIGIN (not a
+       specific path) — CSP path-matching isn't consistently
+       supported across all browsers, so origin-level is the more
+       robust choice even though the form only ever posts to one
+       specific form ID.
+     - Referrer-Policy: avoids leaking full URLs (incl. any query
+       params) to third parties.
+     - X-Content-Type-Options / X-Frame-Options / Permissions-Policy
+       are HTTP-header-only protections — they CANNOT be set via
+       <meta>. Whoever deploys this file should add them at the
+       server/CDN/host level (Netlify, Vercel, Nginx, etc). A sample
+       header set is included in the comment near the closing
+       </html> tag for whoever wires up hosting.
+     ══════════════════════════════════════════════════════════════ -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-zdsUN0JgBdI3JUUV+W9Hmurl5/g2iI1SyN6mJqWtlBw='; style-src 'self' https://fonts.googleapis.com 'sha256-xr7o4ZfKyxmapi8G2t8CR8qtvZBvceVUBAGNXtNhdFs='; font-src https://fonts.gstatic.com; img-src 'self' data: https://i.ytimg.com https://img.youtube.com; frame-src https://www.youtube-nocookie.com; connect-src 'self' https://formspree.io; base-uri 'self'; form-action 'self' https://formspree.io; object-src 'none';" />
+<!-- frame-ancestors / X-Frame-Options cannot be enforced via <meta> — browsers ignore
+     frame-ancestors there. Set both at the server/host level (see closing comment). -->
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<meta name="robots" content="index, follow" />
+
+<link rel="icon" type="image/png" href="img/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<nav id="nav" aria-label="Primary">
+  <a href="#hero" class="nav-logo" aria-label="Soundcore Studio — home">
+    <img src="img/logo_white_transparent.png" alt="Soundcore Studio logo" width="160" height="140" />
+  </a>
+  <ul class="nav-ul">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#rates">Rates</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#contact" class="nav-cta">Book A Session</a></li>
+  </ul>
+  <button class="hbg" id="hbg" aria-label="Open menu" aria-expanded="false" aria-controls="mob"><span></span><span></span><span></span></button>
+</nav>
+<div class="mob-m" id="mob">
+  <button class="mob-x" id="mobx" aria-label="Close menu">&times;</button>
+  <a href="#about" class="ml">About</a>
+  <a href="#services" class="ml">Services</a>
+  <a href="#rates" class="ml">Rates</a>
+  <a href="#work" class="ml">Work</a>
+  <a href="#testimonials" class="ml">Reviews</a>
+  <a href="#faq" class="ml">FAQ</a>
+  <a href="#contact" class="ml mob-cta-gold">Book A Session</a>
+</div>
+
+<main id="main">
+
+<section id="hero" aria-label="Introduction">
+  <img src="img/logo_gold_solid_transparent.png" alt="" class="hero-mark" aria-hidden="true" />
+  <div class="hero-inner">
+    <div class="eyebrow hero-eyebrow reveal">Ilorin, Kwara State · Sound Core Creative Production Studio</div>
+    <h1 class="hero-hl reveal">Where sound<br/>meets its <span>core.</span></h1>
+    <div class="hero-rot reveal">
+      <span>You're not just booking a studio —</span>
+      <b id="rword">plug in, tune out, create.</b>
+    </div>
+    <p class="hero-sub reveal">A creative production studio rooted in African culture and driven by global standards. We capture, shape and amplify sound and stories from the core for artists, creators, brands, churches and media platforms worldwide.</p>
+    <div class="hero-acts reveal">
+      <a href="#contact" class="btn btn-gold">Book A Session</a>
+      <a href="#work" class="btn btn-line">Watch Our Work</a>
+    </div>
+  </div>
+  <div class="shard hero-shard"></div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Excellence</span><span>Creativity</span><span>Innovation</span><span>Integrity</span><span>Passion</span><span>Collaboration</span>
+    <span>Excellence</span><span>Creativity</span><span>Innovation</span><span>Integrity</span><span>Passion</span><span>Collaboration</span>
+  </div>
+</div>
+
+<section id="about" aria-label="About Soundcore Studio">
+  <div class="wrap about-grid">
+    <div class="about-copy">
+      <div class="eyebrow reveal">About The Brand</div>
+      <h2 class="h2 reveal">Built from the<br/>core, for the world.</h2>
+      <p class="reveal">Soundcore Studio Limited is a creative production studio rooted in African culture and driven by global standards. We focus on music production, audio engineering, podcast production and content shooting.</p>
+      <p class="reveal">We exist to capture, shape and amplify sound and stories from the core blending creativity, technical excellence and emotional depth to produce powerful audio and visual content for artists, creators, brands, churches and media platforms worldwide.</p>
+      <div class="brand-tags reveal">
+        <span class="tag">Creative</span><span class="tag">Professional</span><span class="tag">Confident</span>
+        <span class="tag">Authentic</span><span class="tag">Culture-driven</span><span class="tag">Globally competitive</span>
+      </div>
+
+      <div class="mv-grid">
+        <div class="mv-card reveal cut-tr">
+          <div class="mv-t">Our Mission</div>
+          <p>To create high-quality sound and visual experiences by combining creativity, technology and professionalism helping creators and brands communicate their stories clearly, powerfully and authentically.</p>
+        </div>
+        <div class="mv-card reveal cut-tr">
+          <div class="mv-t">Our Vision</div>
+          <p>To become a globally respected, African-rooted creative studio known for excellence in audio and visual production, culture-driven storytelling, and world-class content creation.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="services" aria-label="Our services">
+  <div class="wrap">
+    <div class="svc-hd">
+      <div class="eyebrow reveal">What We Do</div>
+      <h2 class="h2 reveal">Six disciplines.<br/>One standard.</h2>
+      <p class="lead on-dark reveal">From the first take to the final export, every service is built around one commitment: it should sound and look better leaving Soundcore than you imagined it could.</p>
+    </div>
+    <div class="svc-grid">
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">01</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/><path d="M9 21h6"/></svg></div>
+        <div class="svc-name">Music Recording, Mixing &amp; Mastering</div>
+        <p class="svc-desc">Vocals and instrumentation captured clean, balanced into a cohesive mix, and mastered loud, wide and competitive for every streaming platform.</p>
+      </div>
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">02</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 12h3l2-6 4 12 3-9 2 3h4"/></svg></div>
+        <div class="svc-name">Live Session &amp; Performance Recording</div>
+        <p class="svc-desc">Bands, choirs, churches and ensembles recorded in the room with multi-track capture with professional mic placement and on-site technical direction.</p>
+      </div>
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">03</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="3.2"/><path d="M3 12a9 9 0 0 1 18 0M6 12a6 6 0 0 1 12 0"/></svg></div>
+        <div class="svc-name">Podcast Recording, Editing &amp; Production</div>
+        <p class="svc-desc">Clean conversation audio, structured editing and full production built for shows that need to hold attention episode after episode.</p>
+      </div>
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">04</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="6" width="13" height="11" rx="1.5"/><path d="M15.5 10.2 21 7.5v8.8l-5.5-2.7z"/></svg></div>
+        <div class="svc-name">Content Shooting</div>
+        <p class="svc-desc">Video production and creative visuals for music videos, reels, interviews and brand content with lit, framed and shot with intention.</p>
+      </div>
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">05</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h5M4 12h9M4 17h6"/><circle cx="13" cy="7" r="1.6"/><circle cx="17" cy="12" r="1.6"/><circle cx="14" cy="17" r="1.6"/></svg></div>
+        <div class="svc-name">Audio &amp; Visual Post-Production</div>
+        <p class="svc-desc">Colour, sound design, edit and finishing. The layer that turns raw footage and rough audio into a polished, release-ready piece.</p>
+      </div>
+
+      <div class="svc-card reveal cut-tr">
+        <div class="svc-num">06</div>
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 5c3 0 4 1.5 6 1.5S15 5 18 5"/><path d="M6 5v9a3 3 0 1 0 3 0V9"/><path d="M18 5v6a3 3 0 1 1-3 0V9"/></svg></div>
+        <div class="svc-name">Horn Recording &amp; Arrangements</div>
+        <p class="svc-desc">Impeccable horn recording and arrangement, intentionally crafted for your genre and delivered mix-ready.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="rates" aria-label="Service rates" data-default-bg="rust">
+  <div class="wrap">
+    <div class="rates-hd">
+      <div class="eyebrow reveal">Our Rate Card</div>
+      <h2 class="h2 reveal">Clear pricing.<br/>No surprises.</h2>
+      <p class="rates-note reveal">Five session types, three tiers each. Pick a category below, every figure here is a starting point, not a final invoice; reach out and we'll tailor a quote to your project.</p>
+    </div>
+
+    <div class="rate-tabs reveal" role="tablist" aria-label="Rate categories">
+      <button class="rate-tab on" data-bg="rust" role="tab" aria-selected="true">Live Recording</button>
+      <button class="rate-tab" data-bg="pine" role="tab" aria-selected="false">Rehearsal Session</button>
+      <button class="rate-tab" data-bg="gold" role="tab" aria-selected="false">Music Production</button>
+      <button class="rate-tab" data-bg="navy" role="tab" aria-selected="false">Live Studio Session</button>
+      <button class="rate-tab" data-bg="blood" role="tab" aria-selected="false">Content Creation</button>
+    </div>
+
+    <div class="rate-panel on" data-panel="rust">
+      <div class="rate-panel-hd"><h3>Live Recording</h3><span>Bands · Choirs · Churches · Ensembles</span></div>
+      <div class="tier-grid">
+        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦120,000</div>
+          <ul><li>Live recording (small setup)</li><li>Basic mic placement</li><li>Stereo mix</li></ul></div>
+        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦250,000</div>
+          <ul><li>Multi-track live recording</li><li>Professional mic setup</li><li>Basic mix</li><li>Engineer + assistant</li></ul></div>
+        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦400,000</div>
+          <ul><li>Full live recording production</li><li>Advanced mic &amp; room treatment</li><li>Professional mix &amp; master</li><li>On-site technical direction</li></ul></div>
+      </div>
+      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
+    </div>
+
+    <div class="rate-panel" data-panel="pine">
+      <div class="rate-panel-hd"><h3>Rehearsal Session</h3><span>Practice-only, no recording · Per hour</span></div>
+      <div class="tier-grid">
+        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦15,000<small>/hr</small></div>
+          <ul><li>Studio space</li><li>Basic PA system</li></ul></div>
+        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦25,000<small>/hr</small></div>
+          <ul><li>Studio + backline support</li><li>Sound engineer assistance</li></ul></div>
+        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦40,000<small>/hr</small></div>
+          <ul><li>Full rehearsal setup</li><li>Engineer support</li><li>Recording reference (rough)</li></ul></div>
+      </div>
+      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
+    </div>
+
+    <div class="rate-panel" data-panel="gold">
+      <div class="rate-panel-hd"><h3>Music Production</h3><span>Beat production · Arrangement &amp; recording</span></div>
+      <div class="tier-grid">
+        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦80,000</div>
+          <ul><li>Instrumental / beat production</li><li>1 recording session</li><li>Basic arrangement</li><li>1 revision</li></ul></div>
+        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦150,000</div>
+          <ul><li>Full music production</li><li>Multiple recording sessions</li><li>Advanced arrangement</li><li>Basic mix</li><li>Up to 3 revisions</li></ul></div>
+        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦250,000</div>
+          <ul><li>Full production, idea → final song</li><li>Unlimited recording sessions</li><li>Professional mix &amp; master</li><li>Creative direction &amp; guidance</li><li>Unlimited revisions</li></ul></div>
+      </div>
+      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
+    </div>
+
+    <div class="rate-panel" data-panel="navy">
+      <div class="rate-panel-hd"><h3>Live Studio Session</h3><span>Recorded performance session · Per hour</span></div>
+      <div class="tier-grid">
+        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦30,000<small>/hr</small></div>
+          <ul><li>Live studio recording</li><li>Basic mix</li></ul></div>
+        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦50,000<small>/hr</small></div>
+          <ul><li>Multi-track recording</li><li>Professional engineer</li><li>Clean mix</li></ul></div>
+        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦80,000<small>/hr</small></div>
+          <ul><li>Premium live session setup</li><li>Engineer + assistant</li><li>Broadcast-ready mix</li></ul></div>
+      </div>
+      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
+    </div>
+
+    <div class="rate-panel" data-panel="blood">
+      <div class="rate-panel-hd"><h3>Content Creation Session</h3><span>Podcast · YouTube · Reels · Interviews · Per hour</span></div>
+      <div class="tier-grid">
+        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦25,000<small>/hr</small></div>
+          <ul><li>Audio recording</li><li>Basic mic setup</li></ul></div>
+        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦45,000<small>/hr</small></div>
+          <ul><li>Audio + basic video setup</li><li>Lighting</li><li>Clean audio processing</li></ul></div>
+        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦75,000<small>/hr</small></div>
+          <ul><li>Audio + multi-camera video</li><li>Professional lighting</li><li>Audio processing &amp; basic video edit</li></ul></div>
+      </div>
+      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="work" aria-label="Our work">
+  <div class="wrap">
+    <div class="work-hd">
+      <div class="eyebrow reveal">Featured Work</div>
+      <h2 class="h2 reveal">The work speaks<br/>for itself.</h2>
+      <p class="lead on-dark reveal">A look at sessions, sets and stories we've helped bring to life. Hosted on YouTube and embedded with the privacy-enhanced player.</p>
+    </div>
+
+    <div class="work-filters reveal" role="tablist" aria-label="Filter work by category">
+      <button class="wf-btn on" data-f="all">All Work</button>
+      <button class="wf-btn" data-f="music">Music Videos</button>
+      <button class="wf-btn" data-f="live">Live Sessions</button>
+      <button class="wf-btn" data-f="podcast">Podcasts</button>
+      <button class="wf-btn" data-f="bts">Behind The Scenes</button>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="vid-card reveal" data-c="music">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="6CQFARa0TEk" aria-label="Play video: Music Video — Full Production">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Music Video</div>
+          <div class="vid-title">Full Production Visual</div>
+          <p class="vid-desc">Shot, graded and edited end-to-end at Soundcore  concept to final cut.</p>
+        </div>
+      </article>
+
+      <article class="vid-card reveal" data-c="live">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="SIqKvQZ0Wxs" aria-label="Play video: Live Studio Session">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Live Session</div>
+          <div class="vid-title">In-Studio Performance</div>
+          <p class="vid-desc">Multi-track live capture with broadcast-ready mix, straight off the studio floor.</p>
+        </div>
+      </article>
+
+      <article class="vid-card reveal" data-c="podcast">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="OuTd8VBk63A" aria-label="Play video: Podcast Highlight">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Podcast</div>
+          <div class="vid-title">Conversation, Captured Clean</div>
+          <p class="vid-desc">Multi-camera podcast recording with full audio post edited for the feed.</p>
+        </div>
+      </article>
+
+      <article class="vid-card reveal" data-c="bts">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="dXYXbZPZTP0" aria-label="Play video: Behind The Scenes">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Behind The Scenes</div>
+          <div class="vid-title">A Day At The Studio</div>
+          <p class="vid-desc">An inside look at how a session moves from brief to delivery.</p>
+        </div>
+      </article>
+
+      <!-- NOTE: this card and "Reels & Shorts Roundup" below currently share
+           the same video ID (dXYXbZPZTP0) as "A Day At The Studio" above.
+           If that's a placeholder, swap in real IDs for each when ready —
+           right now all three cards will play the identical video. -->
+      <article class="vid-card reveal" data-c="music live">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="dXYXbZPZTP0" aria-label="Play video: Acoustic Session">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Live Session</div>
+          <div class="vid-title">Acoustic Studio Set</div>
+          <p class="vid-desc">Stripped-back performance, recorded and shot in a single afternoon.</p>
+        </div>
+      </article>
+
+      <article class="vid-card reveal" data-c="bts podcast">
+        <div class="vid-frame">
+          <button class="vid-play" data-yt="dXYXbZPZTP0" aria-label="Play video: Content Day Reel">
+            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          </button>
+        </div>
+        <div class="vid-body">
+          <div class="vid-cat">Content Day</div>
+          <div class="vid-title">Reels &amp; Shorts Roundup</div>
+          <p class="vid-desc">Platform-native cut-downs from a single content shoot, ready for every feed.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" aria-label="Client reviews">
+  <div class="wrap">
+    <div class="testi-hd">
+      <div class="eyebrow reveal">Client Reviews</div>
+      <h2 class="h2 reveal">Trusted by voices<br/>that move people.</h2>
+    </div>
+
+    <div class="testi-track-wrap reveal">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"The team was fantastic on the choir gig. I've worked with them many times, and they've become a key creative partner in my projects. Always professional, talented, and easy to collaborate with—highly recommended. They brought a real human feel to my sound that no VST or AI could replicate."</p>
+          <div class="testi-auth"><div class="testi-av">B</div><div><div class="testi-name">Bruno D. (Portugal)</div><div class="testi-role">Background Vocals</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Undoubtedly the best brass recording team on Fiverr!"</p>
+          <div class="testi-auth"><div class="testi-av">M</div><div><div class="testi-name">Michael S. (Hong Kong)</div><div class="testi-role">Horn Recording and Arrangement</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"First time working with them. Pricing was fair along with the delivery time. Quality of the sound musicality and creativity was top notch/ This was exactly what i was looking for. I provided a reference of the mixed brass sound and he nailed it. Not easy with a Salsa Fusion but it sounds great thanks again."</p>
+          <div class="testi-auth"><div class="testi-av">N</div><div><div class="testi-name">Naser M. (United States)</div><div class="testi-role">Horn Recording and Arrangement</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"Good experience helping me out with some session horns. Not a lot of communication along the way but I gave a lot of detail upfront."</p>
+          <div class="testi-auth"><div class="testi-av">W</div><div><div class="testi-name">Waking P. (United States)</div><div class="testi-role">Horn Recording and Arrangement</div></div></div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-quote">"This deserves 5 stars because 1. The Sound Quality was awesome. It wasn't anywhere near microwave quality, not even a sign of distortion was there to hear. 2. I really liked how she got it within one day. Usually this stuff takes 5 days at least. (If you want to know the context for my song, this is the base version of the show intro song for my Christian Detective show, "Convicted")."</p>
+          <div class="testi-auth"><div class="testi-av">I</div><div><div class="testi-name">Iexistonearth (United States)</div><div class="testi-role">Horn Recording and Arrangement</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testi-controls reveal">
+      <button class="tc-btn" id="tPrev" aria-label="Previous reviews">←</button>
+      <div class="tc-dots" id="tDots"></div>
+      <button class="tc-btn" id="tNext" aria-label="Next reviews">→</button>
+    </div>
+  </div>
+</section>
+
+<section id="faq" aria-label="Frequently asked questions">
+  <div class="wrap faq-layout">
+    <div>
+      <div class="eyebrow reveal">FAQ</div>
+      <h2 class="h2 reveal">Questions,<br/>answered.</h2>
+      <p class="lead on-light reveal">Can't find what you're looking for? Send us a message and we'll get back to you within 24 hours.</p>
+    </div>
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="true">How do I book a session?<span class="faq-tog">+</span></button>
+        <div class="faq-a on"><p>Fill in the form below or reach us on WhatsApp with your preferred date, service and budget range. We'll confirm availability and send a short brief to lock in your slot.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do I need to pay before my session?<span class="faq-tog">+</span></button>
+        <div class="faq-a"><p>Yes — payment is required before session confirmation for all packages. For bulk bookings or artists on retainer, ask us about negotiated terms.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Can prices change for extended hours or special setups?<span class="faq-tog">+</span></button>
+        <div class="faq-a"><p>Extra charges may apply for sessions that run beyond the booked time or that need non-standard equipment or room setups. We'll always flag this before, not after.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Do you record churches, choirs and live ensembles on-site?<span class="faq-tog">+</span></button>
+        <div class="faq-a"><p>Yes. Our Live Recording packages cover on-location multi-track capture with professional mic placement, for bands, choirs, churches and ensembles.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">How many revisions are included?<span class="faq-tog">+</span></button>
+        <div class="faq-a"><p>It depends on the tier: Basic packages include 1 revision, Standard includes up to 3, and Premium music production includes unlimited revisions until it sounds right.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Where is the studio located?<span class="faq-tog">+</span></button>
+        <div class="faq-a"><p>We're based in Ilorin, Kwara State, Nigeria. Content shoots and live recordings can also be arranged on-location for churches, events and ensembles.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" aria-label="Contact us">
+  <div class="wrap contact-layout">
+    <div>
+      <div class="eyebrow reveal">Get In Touch</div>
+      <h2 class="h2 reveal">Let's build<br/>your record.</h2>
+      <p class="lead on-dark reveal contact-lead">Tell us what you're working on and we'll respond with availability and a tailored quote — usually within 24 hours.</p>
+
+      <div class="reveal">
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.4"/></svg></div>
+          <div><div class="cinfo-label">Location</div><div class="cinfo-val">Ilorin, Kwara State, Nigeria</div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <div><div class="cinfo-label">Email</div><div class="cinfo-val"><a href="mailto:bookings@soundcorestudio.ng">bookings@soundcorestudio.ng</a></div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15.5c0 .6-.4 1.1-1 1.3l-3 1a1.4 1.4 0 0 1-1.5-.4l-1.4-1.6a11 11 0 0 1-5-5L7.6 9.4A1.4 1.4 0 0 1 7.2 8l1-3A1.4 1.4 0 0 1 9.5 4H11a1 1 0 0 1 1 1.1 13 13 0 0 0 1 5.3 1 1 0 0 1-.2 1.1l-1 1a9 9 0 0 0 4 4l1-1a1 1 0 0 1 1.1-.2 13 13 0 0 0 5.3 1A1 1 0 0 1 21 15.5z"/></svg></div>
+          <div><div class="cinfo-label">WhatsApp</div><div class="cinfo-val"><a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer">+234 701 084 1565</a></div></div>
+        </div>
+        <div class="cinfo-item">
+          <div class="cinfo-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+          <div><div class="cinfo-label">Response Time</div><div class="cinfo-val">Within 24 hours, every day</div></div>
+        </div>
+      </div>
+
+      <div class="social-row reveal">
+        <a href="https://instagram.com/letstalkitng" target="_blank" rel="noopener noreferrer" aria-label="Soundcore on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+        <a href="https://tiktok.com/@letstalkitng" target="_blank" rel="noopener noreferrer" aria-label="Soundcore on TikTok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 3v9.5a4 4 0 1 1-3-3.87"/><path d="M16 3a5 5 0 0 0 5 5"/></svg></a>
+        <a href="https://youtube.com/@letstalkitng" target="_blank" rel="noopener noreferrer" aria-label="Soundcore on YouTube"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M11 9.5l4 2.5-4 2.5z"/></svg></a>
+      </div>
+    </div>
+
+    <!--
+      FORM SECURITY + BACKEND NOTE
+      This form runs client-side validation and a honeypot field
+      (.hp) to deter basic spam bots. It posts to a real Formspree
+      endpoint (see the `action` + `fetch()` below), which handles
+      the actual email delivery, its own spam filtering and rate
+      limiting. Client-side checks here are a UX convenience only —
+      Formspree independently re-validates on its side too.
+    -->
+    <div class="form-card reveal">
+      <form id="bookingForm" action="https://formspree.io/f/xvzjwyqr" method="POST" novalidate autocomplete="on">
+        <div class="f-row">
+          <div class="f-group">
+            <label for="f-name">Full Name</label>
+            <input id="f-name" name="name" type="text" placeholder="Your name" maxlength="80" required autocomplete="name" />
+            <div class="f-error">Please enter your name.</div>
+          </div>
+          <div class="f-group">
+            <label for="f-email">Email Address</label>
+            <input id="f-email" name="email" type="email" placeholder="you@email.com" maxlength="120" required autocomplete="email" />
+            <div class="f-error">Please enter a valid email address.</div>
+          </div>
+        </div>
+        <div class="f-group">
+          <label for="f-phone">Phone / WhatsApp</label>
+          <input id="f-phone" name="phone" type="tel" placeholder="+234 000 000 0000" maxlength="20" autocomplete="tel" />
+        </div>
+        <div class="f-row">
+          <div class="f-group">
+            <label for="f-service">Service Needed</label>
+            <select id="f-service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option>Live Recording</option>
+              <option>Rehearsal Session</option>
+              <option>Music Production</option>
+              <option>Live Studio Session</option>
+              <option>Content Creation Session</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="f-group">
+            <label for="f-tier">Package Tier</label>
+            <select id="f-tier" name="tier">
+              <option value="" disabled selected>Select a tier</option>
+              <option>Basic</option><option>Standard</option><option>Premium</option>
+              <option>Let's discuss</option>
+            </select>
+          </div>
+        </div>
+        <div class="f-group">
+          <label for="f-msg">Project Details</label>
+          <textarea id="f-msg" name="message" maxlength="800" placeholder="Tell us about your session — date, genre, references, what you're trying to achieve..." required></textarea>
+          <div class="f-error">Please add a few details about your project.</div>
+        </div>
+
+        <div class="hp" aria-hidden="true">
+          <label for="f-website">Website</label>
+          <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+        </div>
+
+        <button type="submit" class="btn btn-gold form-submit">Send My Project Brief</button>
+        <p class="f-hint form-hint">We respond to every enquiry within 24 hours · payment is required to confirm a session.</p>
+      </form>
+
+      <div id="formOk">
+        <h3>Brief received.</h3>
+        <p>We'll review your project and follow up with availability and a quote shortly. Keep an eye on your inbox and WhatsApp.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo_white_transparent.png" alt="Soundcore Studio logo" class="foot-logo" />
+        <p class="foot-desc">A creative production studio rooted in African culture and driven by global standards from music, podcasts, live sessions and content, captured from the core.</p>
+      </div>
+      <div>
+        <div class="foot-title">Navigate</div>
+        <ul class="foot-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#rates">Rates</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-title">Services</div>
+        <ul class="foot-links">
+          <li><a href="#services">Recording &amp; Mixing</a></li>
+          <li><a href="#services">Live Sessions</a></li>
+          <li><a href="#services">Podcast Production</a></li>
+          <li><a href="#services">Content Shooting</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="foot-title">Contact</div>
+        <ul class="foot-links">
+          <li><a href="mailto:bookings@soundcorestudio.ng">bookings@soundcorestudio.ng</a></li>
+          <li><a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li><a href="#contact">Book A Session</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-legal">© <span id="yr">2026</span> Soundcore Studio Limited. All rights reserved.<span>RC 9191853 · Incorporated under CAMA 2020, Federal Republic of Nigeria</span></div>
+      <div class="foot-tag">Plug In · Tune Out · Create</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     RECOMMENDED SERVER / HOSTING HEADERS
+     Add these at your host (Netlify _headers file, Vercel
+     vercel.json, Nginx/Apache config, etc) — they cannot be set
+     from inside an HTML file but meaningfully harden the site:
+
+       X-Frame-Options: DENY
+       X-Content-Type-Options: nosniff
+       Referrer-Policy: strict-origin-when-cross-origin
+       Permissions-Policy: geolocation=(), microphone=(), camera=()
+       Strict-Transport-Security: max-age=63072000; includeSubDomains
+       Content-Security-Policy: frame-ancestors 'self';
+
+     Also serve this site over HTTPS only.
+     ══════════════════════════════════════════════════════════════ -->
+<a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+</body>
+</html>
