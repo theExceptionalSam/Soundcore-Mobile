@@ -1,0 +1,18 @@
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Local env (never commit tokens / secrets)
+.env
+.env.local
+.env.*.local
+*.token
+
+# Local node / vercel tooling (if you ever add a build step)
+node_modules/
+.vercel/
