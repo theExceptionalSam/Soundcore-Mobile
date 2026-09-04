@@ -82,85 +82,17 @@
 </div>
 <section id="rates" aria-label="Service rates" data-default-bg="rust">
   <div class="wrap">
+
+  <div class="wrap">
     <div class="rates-hd">
       <div class="eyebrow reveal">Our Rate Card</div>
       <h2 class="h2 reveal">Clear pricing.<br/>No surprises.</h2>
       <p class="rates-note reveal">Five session types, three tiers each. Pick a category below, every figure here is a starting point, not a final invoice; reach out and we'll tailor a quote to your project.</p>
     </div>
 
-    <div class="rate-tabs reveal" role="tablist" aria-label="Rate categories">
-      <button class="rate-tab on" data-bg="rust" role="tab" aria-selected="true">Live Recording</button>
-      <button class="rate-tab" data-bg="pine" role="tab" aria-selected="false">Rehearsal Session</button>
-      <button class="rate-tab" data-bg="gold" role="tab" aria-selected="false">Music Production</button>
-      <button class="rate-tab" data-bg="navy" role="tab" aria-selected="false">Live Studio Session</button>
-      <button class="rate-tab" data-bg="blood" role="tab" aria-selected="false">Content Creation</button>
-    </div>
+    <div class="rate-tabs reveal" id="rateTabs" role="tablist" aria-label="Rate categories"></div>
 
-    <div class="rate-panel on" data-panel="rust">
-      <div class="rate-panel-hd"><h3>Live Recording</h3><span>Bands · Choirs · Churches · Ensembles</span></div>
-      <div class="tier-grid">
-        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦120,000</div>
-          <ul><li>Live recording (small setup)</li><li>Basic mic placement</li><li>Stereo mix</li></ul></div>
-        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦250,000</div>
-          <ul><li>Multi-track live recording</li><li>Professional mic setup</li><li>Basic mix</li><li>Engineer + assistant</li></ul></div>
-        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦400,000</div>
-          <ul><li>Full live recording production</li><li>Advanced mic &amp; room treatment</li><li>Professional mix &amp; master</li><li>On-site technical direction</li></ul></div>
-      </div>
-      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
-    </div>
-
-    <div class="rate-panel" data-panel="pine">
-      <div class="rate-panel-hd"><h3>Rehearsal Session</h3><span>Practice-only, no recording · Per hour</span></div>
-      <div class="tier-grid">
-        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦15,000<small>/hr</small></div>
-          <ul><li>Studio space</li><li>Basic PA system</li></ul></div>
-        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦25,000<small>/hr</small></div>
-          <ul><li>Studio + backline support</li><li>Sound engineer assistance</li></ul></div>
-        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦40,000<small>/hr</small></div>
-          <ul><li>Full rehearsal setup</li><li>Engineer support</li><li>Recording reference (rough)</li></ul></div>
-      </div>
-      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
-    </div>
-
-    <div class="rate-panel" data-panel="gold">
-      <div class="rate-panel-hd"><h3>Music Production</h3><span>Beat production · Arrangement &amp; recording</span></div>
-      <div class="tier-grid">
-        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦80,000</div>
-          <ul><li>Instrumental / beat production</li><li>1 recording session</li><li>Basic arrangement</li><li>1 revision</li></ul></div>
-        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦150,000</div>
-          <ul><li>Full music production</li><li>Multiple recording sessions</li><li>Advanced arrangement</li><li>Basic mix</li><li>Up to 3 revisions</li></ul></div>
-        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦250,000</div>
-          <ul><li>Full production, idea → final song</li><li>Unlimited recording sessions</li><li>Professional mix &amp; master</li><li>Creative direction &amp; guidance</li><li>Unlimited revisions</li></ul></div>
-      </div>
-      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
-    </div>
-
-    <div class="rate-panel" data-panel="navy">
-      <div class="rate-panel-hd"><h3>Live Studio Session</h3><span>Recorded performance session · Per hour</span></div>
-      <div class="tier-grid">
-        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦30,000<small>/hr</small></div>
-          <ul><li>Live studio recording</li><li>Basic mix</li></ul></div>
-        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦50,000<small>/hr</small></div>
-          <ul><li>Multi-track recording</li><li>Professional engineer</li><li>Clean mix</li></ul></div>
-        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦80,000<small>/hr</small></div>
-          <ul><li>Premium live session setup</li><li>Engineer + assistant</li><li>Broadcast-ready mix</li></ul></div>
-      </div>
-      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
-    </div>
-
-    <div class="rate-panel" data-panel="blood">
-      <div class="rate-panel-hd"><h3>Content Creation Session</h3><span>Podcast · YouTube · Reels · Interviews · Per hour</span></div>
-      <div class="tier-grid">
-        <div class="tier-card"><div class="tier-name">Basic</div><div class="tier-price">₦25,000<small>/hr</small></div>
-          <ul><li>Audio recording</li><li>Basic mic setup</li></ul></div>
-        <div class="tier-card mid"><div class="tier-name">Standard</div><div class="tier-price">₦45,000<small>/hr</small></div>
-          <ul><li>Audio + basic video setup</li><li>Lighting</li><li>Clean audio processing</li></ul></div>
-        <div class="tier-card"><div class="tier-name">Premium</div><div class="tier-price">₦75,000<small>/hr</small></div>
-          <ul><li>Audio + multi-camera video</li><li>Professional lighting</li><li>Audio processing &amp; basic video edit</li></ul></div>
-      </div>
-      <div class="rate-notes"><b>Notes</b>Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation.</div>
-    </div>
-
+    <div id="ratePanels"></div>
   </div>
 </section>
 </main>
@@ -209,6 +141,8 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="content.js"></script>
+<script>SCS.render('rates');</script>
 
 <a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

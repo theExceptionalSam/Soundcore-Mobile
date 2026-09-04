@@ -1,0 +1,220 @@
+[
+  {
+    "id": "rust",
+    "name": "Live Recording",
+    "heading": "Live Recording",
+    "subtitle": "Bands · Choirs · Churches · Ensembles",
+    "bg_color": "rust",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "₦120,000",
+        "unit": "",
+        "is_featured": false,
+        "features": [
+          "Live recording (small setup)",
+          "Basic mic placement",
+          "Stereo mix"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₦250,000",
+        "unit": "",
+        "is_featured": true,
+        "features": [
+          "Multi-track live recording",
+          "Professional mic setup",
+          "Basic mix",
+          "Engineer + assistant"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₦400,000",
+        "unit": "",
+        "is_featured": false,
+        "features": [
+          "Full live recording production",
+          "Advanced mic & room treatment",
+          "Professional mix & master",
+          "On-site technical direction"
+        ]
+      }
+    ],
+    "notes": "Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation."
+  },
+  {
+    "id": "pine",
+    "name": "Rehearsal Session",
+    "heading": "Rehearsal Session",
+    "subtitle": "Practice-only, no recording · Per hour",
+    "bg_color": "pine",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "₦15,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Studio space",
+          "Basic PA system"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₦25,000",
+        "unit": "/hr",
+        "is_featured": true,
+        "features": [
+          "Studio + backline support",
+          "Sound engineer assistance"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₦40,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Full rehearsal setup",
+          "Engineer support",
+          "Recording reference (rough)"
+        ]
+      }
+    ],
+    "notes": "Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation."
+  },
+  {
+    "id": "gold",
+    "name": "Music Production",
+    "heading": "Music Production",
+    "subtitle": "Beat production · Arrangement & recording",
+    "bg_color": "gold",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "₦80,000",
+        "unit": "",
+        "is_featured": false,
+        "features": [
+          "Instrumental / beat production",
+          "1 recording session",
+          "Basic arrangement",
+          "1 revision"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₦150,000",
+        "unit": "",
+        "is_featured": true,
+        "features": [
+          "Full music production",
+          "Multiple recording sessions",
+          "Advanced arrangement",
+          "Basic mix",
+          "Up to 3 revisions"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₦250,000",
+        "unit": "",
+        "is_featured": false,
+        "features": [
+          "Full production, idea → final song",
+          "Unlimited recording sessions",
+          "Professional mix & master",
+          "Creative direction & guidance",
+          "Unlimited revisions"
+        ]
+      }
+    ],
+    "notes": "Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation."
+  },
+  {
+    "id": "navy",
+    "name": "Live Studio Session",
+    "heading": "Live Studio Session",
+    "subtitle": "Recorded performance session · Per hour",
+    "bg_color": "navy",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "₦30,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Live studio recording",
+          "Basic mix"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₦50,000",
+        "unit": "/hr",
+        "is_featured": true,
+        "features": [
+          "Multi-track recording",
+          "Professional engineer",
+          "Clean mix"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₦80,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Premium live session setup",
+          "Engineer + assistant",
+          "Broadcast-ready mix"
+        ]
+      }
+    ],
+    "notes": "Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation."
+  },
+  {
+    "id": "blood",
+    "name": "Content Creation",
+    "heading": "Content Creation Session",
+    "subtitle": "Podcast · YouTube · Reels · Interviews · Per hour",
+    "bg_color": "blood",
+    "tiers": [
+      {
+        "name": "Basic",
+        "price": "₦25,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Audio recording",
+          "Basic mic setup"
+        ]
+      },
+      {
+        "name": "Standard",
+        "price": "₦45,000",
+        "unit": "/hr",
+        "is_featured": true,
+        "features": [
+          "Audio + basic video setup",
+          "Lighting",
+          "Clean audio processing"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": "₦75,000",
+        "unit": "/hr",
+        "is_featured": false,
+        "features": [
+          "Audio + multi-camera video",
+          "Professional lighting",
+          "Audio processing & basic video edit"
+        ]
+      }
+    ],
+    "notes": "Prices are negotiable for bulk bookings · Discounts available for artists on retainer · Extra charges may apply for extended hours or special setups · Payment required before session confirmation."
+  }
+]

@@ -96,21 +96,7 @@
       <button class="wf-btn" data-f="bts">Behind The Scenes</button>
     </div>
 
-    <div class="work-grid">
-
-      <article class="vid-card reveal" data-c="podcast">
-        <div class="vid-frame">
-          <button class="vid-play" data-yt="OuTd8VBk63A" aria-label="Play video: Podcast Highlight">
-            <span class="vid-play-ic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-          </button>
-        </div>
-        <div class="vid-body">
-          <div class="vid-cat">Podcast</div>
-          <div class="vid-title">Conversation, Captured Clean</div>
-          <p class="vid-desc">Multi-camera podcast recording with full audio post edited for the feed.</p>
-        </div>
-      </article>
-
+    <div class="work-grid" id="workGrid"></div>
     </div>
 
     <p class="work-more-hint reveal">More sessions, sets and stories are on the way. <a href="contact.html">Start a brief</a> and your work could be here next.</p>
@@ -162,6 +148,8 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="content.js"></script>
+<script>SCS.render('work');</script>
 
 <a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

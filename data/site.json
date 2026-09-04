@@ -1,0 +1,40 @@
+{
+  "brand": "Soundcore Studio Limited",
+  "tagline": "Plug In · Tune Out · Create",
+  "description": "A creative production studio rooted in African culture and driven by global standards from music, podcasts, live sessions and content, captured from the core.",
+  "domain": "https://soundcorestudio.ng",
+  "rc_number": "RC 9191853",
+  "incorporation_note": "Incorporated under CAMA 2020, Federal Republic of Nigeria",
+  "location": {
+    "city": "Ilorin",
+    "region": "Kwara State",
+    "country": "Nigeria"
+  },
+  "contact": {
+    "email": "bookings@soundcorestudio.ng",
+    "whatsapp": "2347010841565",
+    "whatsapp_display": "+234 701 084 1565",
+    "response_time": "Within 24 hours, every day"
+  },
+  "social": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/letstalkitng"
+    },
+    {
+      "label": "TikTok",
+      "url": "https://tiktok.com/@letstalkitng"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://youtube.com/@letstalkitng"
+    }
+  ],
+  "formspree_endpoint": "https://formspree.io/f/xvzjwyqr",
+  "footer_services": [
+    "Recording & Mixing",
+    "Live Sessions",
+    "Podcast Production",
+    "Content Shooting"
+  ]
+}

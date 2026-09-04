@@ -85,20 +85,14 @@
     <div class="about-copy">
       <div class="eyebrow reveal">About The Brand</div>
       <h2 class="h2 reveal">Built from the<br/>core, for the world.</h2>
-      <p class="reveal">Soundcore Studio Limited is a creative production studio rooted in African culture and driven by global standards. We focus on music production, audio engineering, podcast production and content shooting.</p>
-      <p class="reveal">We exist to capture, shape and amplify sound and stories from the core blending creativity, technical excellence and emotional depth to produce powerful audio and visual content for artists, creators, brands, churches and media platforms worldwide.</p>
-      <div class="brand-tags reveal">
-        <span class="tag">Creative</span><span class="tag">Professional</span><span class="tag">Confident</span>
-        <span class="tag">Authentic</span><span class="tag">Culture-driven</span><span class="tag">Globally competitive</span>
-      </div>
+      <div id="aboutParas"></div>
+      <div class="brand-tags reveal" id="aboutTags"></div>
 
       <div class="mv-grid">
-        <div class="mv-card reveal cut-tr">
-          <div class="mv-t">Our Mission</div>
+        <div class="mv-card reveal cut-tr" id="aboutMission">
           <p>To create high-quality sound and visual experiences by combining creativity, technology and professionalism helping creators and brands communicate their stories clearly, powerfully and authentically.</p>
         </div>
-        <div class="mv-card reveal cut-tr">
-          <div class="mv-t">Our Vision</div>
+        <div class="mv-card reveal cut-tr" id="aboutVision">
           <p>To become a globally respected, African-rooted creative studio known for excellence in audio and visual production, culture-driven storytelling, and world-class content creation.</p>
         </div>
       </div>
@@ -152,6 +146,8 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="content.js"></script>
+<script>SCS.render('about');</script>
 
 <a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

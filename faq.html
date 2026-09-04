@@ -87,11 +87,7 @@
       <h2 class="h2 reveal">Questions,<br/>answered.</h2>
       <p class="lead on-light reveal">Can't find what you're looking for? Send us a message and we'll get back to you within 24 hours.</p>
     </div>
-    <div class="faq-list reveal">
-
-      <div class="faq-item">
-        <button class="faq-q" aria-expanded="true">How do I book a session?<span class="faq-tog">+</span></button>
-        <div class="faq-a on"><p>Fill in the form below or reach us on WhatsApp with your preferred date, service and budget range. We'll confirm availability and send a short brief to lock in your slot.</p></div>
+    <div class="faq-list reveal" id="faqList"></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">Do I need to pay before my session?<span class="faq-tog">+</span></button>
@@ -163,6 +159,8 @@
 </footer>
 
 <script src="script.js"></script>
+<script src="content.js"></script>
+<script>SCS.render('faqs');</script>
 
 <a href="https://wa.me/2347010841565" target="_blank" rel="noopener noreferrer" class="wa-float" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

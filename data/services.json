@@ -1,0 +1,32 @@
+[
+  {
+    "num": "01",
+    "name": "Music Recording, Mixing & Mastering",
+    "description": "Vocals and instrumentation captured clean, balanced into a cohesive mix, and mastered loud, wide and competitive for every streaming platform."
+  },
+  {
+    "num": "02",
+    "name": "Live Session & Performance Recording",
+    "description": "Bands, choirs, churches and ensembles recorded in the room with multi-track capture with professional mic placement and on-site technical direction."
+  },
+  {
+    "num": "03",
+    "name": "Podcast Recording, Editing & Production",
+    "description": "Clean conversation audio, structured editing and full production built for shows that need to hold attention episode after episode."
+  },
+  {
+    "num": "04",
+    "name": "Content Shooting",
+    "description": "Video production and creative visuals for music videos, reels, interviews and brand content with lit, framed and shot with intention."
+  },
+  {
+    "num": "05",
+    "name": "Audio & Visual Post-Production",
+    "description": "Colour, sound design, edit and finishing. The layer that turns raw footage and rough audio into a polished, release-ready piece."
+  },
+  {
+    "num": "06",
+    "name": "Horn Recording & Arrangements",
+    "description": "Impeccable horn recording and arrangement, intentionally crafted for your genre and delivered mix-ready."
+  }
+]
