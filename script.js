@@ -192,11 +192,19 @@
         tDotsWrap.appendChild(d);
       }
     }
+    /* Read the gap from CSS instead of hardcoding 22.4px (= 1.4rem × 16).
+       If someone tweaks .testi-track { gap } later, the carousel keeps
+       its math in sync. */
+    function cardStride(){
+      var cardW = tCards[0].getBoundingClientRect().width;
+      var cs = window.getComputedStyle(tTrack);
+      var gap = parseFloat(cs.columnGap || cs.gap || '0') || 0;
+      return cardW + gap;
+    }
     function goTo(n){
       if(!tCards.length) return;
       tSlide = Math.max(0, Math.min(n, totalSlides()-1));
-      var cardW = tCards[0].getBoundingClientRect().width + 22.4;
-      tTrack.style.transform = 'translateX(-' + (tSlide * cardW) + 'px)';
+      tTrack.style.transform = 'translateX(-' + (tSlide * cardStride()) + 'px)';
       if(tDotsWrap){
         tDotsWrap.querySelectorAll('.tc-dot').forEach(function(d,i){ d.classList.toggle('on', i===tSlide); });
       }
@@ -205,8 +213,22 @@
     if(tNextBtn){ tNextBtn.addEventListener('click', function(){ goTo(tSlide+1); }); }
     buildDots();
     window.addEventListener('resize', function(){ buildDots(); goTo(0); });
-    var testiAuto = setInterval(function(){ goTo((tSlide+1) % totalSlides()); }, 5500);
-    tTrack.addEventListener('mouseenter', function(){ clearInterval(testiAuto); });
+
+    /* Auto-advance carousel. Pause on hover, RESUME on mouseleave — the
+       previous version cleared the interval on mouseenter and never
+       restarted it, so the carousel froze forever after the first hover. */
+    var AUTO_MS = 5500;
+    var testiAuto;
+    function startAuto(){ stopAuto(); testiAuto = setInterval(function(){ goTo((tSlide+1) % totalSlides()); }, AUTO_MS); }
+    function stopAuto(){ if(testiAuto){ clearInterval(testiAuto); testiAuto = null; } }
+    startAuto();
+    tTrack.addEventListener('mouseenter', stopAuto);
+    tTrack.addEventListener('mouseleave', startAuto);
+    /* Also pause when the tab is hidden, so we don't burn cycles advancing
+       a carousel no one is looking at. */
+    document.addEventListener('visibilitychange', function(){
+      if(document.hidden){ stopAuto(); } else { startAuto(); }
+    });
   }
 
   /* ── FAQ accordion (faq page only) ── */
