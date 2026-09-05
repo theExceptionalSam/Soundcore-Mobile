@@ -1,0 +1,18 @@
+# Local env (never commit tokens / secrets)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+node_modules/
+.next/
+.vercel/
+
+# Logs
+*.log
+dev.log
+server.log
+
+# OS junk
+.DS_Store
+Thumbs.db

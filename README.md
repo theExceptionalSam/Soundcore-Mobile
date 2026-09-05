@@ -1,14 +1,23 @@
-# Soundcore Studio — Marketing Site
+# Soundcore Studio — Marketing Site + Admin
 
-Static marketing website for **Soundcore Studio Limited** (RC 9191853), a creative
-production studio in Ilorin, Kwara State, Nigeria. Music recording, mixing &
-mastering, podcast production, live sessions and content shooting.
+This repo holds **two projects**:
+
+| Folder | What it is | Deploys to |
+|---|---|---|
+| `/` (root) | Static marketing website (vanilla HTML/CSS/JS) | `soundcorestudio.ng` |
+| `/admin` | Next.js admin SPA (content management console) | `admin.soundcorestudio.ng` (or similar) |
+
+The static site reads its content from `/data/*.json`. The admin writes those
+JSON files via the GitHub API. Each save in the admin = one commit to this
+repo = one Vercel auto-deploy of the static site.
 
 Live at **<https://soundcorestudio.ng/>**.
 
 ---
 
-## Stack
+## Static site (root)
+
+### Stack
 
 - **Vanilla HTML/CSS/JS** — no framework, no build step, no runtime dependencies.
 - **Vercel** for hosting (config in `vercel.json`).
@@ -16,7 +25,7 @@ Live at **<https://soundcorestudio.ng/>**.
 - **Google Fonts** (Anton, Rethink Sans, Space Mono) — loaded with a `media="print"`
   swap trick so they never block first paint.
 
-The whole site is **9 HTML pages + 1 CSS file + 2 JS files + images**. That's it.
+The whole site is **9 HTML pages + 1 CSS file + 2 JS files + content.js + /data/*.json + images**.
 
 ## File layout
 
@@ -38,6 +47,8 @@ vercel.json        Security headers + per-asset Cache-Control
 robots.txt         Crawler directives
 sitemap.xml        SEO sitemap
 img/               All image assets (logos, hero, favicon, etc.)
+data/              Content JSON files (single source of truth — edited via /admin)
+admin/             The Next.js admin SPA (separate project — see admin/README.md)
 ```
 
 ## Local development
