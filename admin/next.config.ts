@@ -1,8 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
-  /* config options here */
+  /* Vercel auto-handles output. Do NOT set output: "standalone" — that's
+     for self-hosting (Docker/VPS) and breaks Vercel's Next.js runtime,
+     causing every route to 404 even though the build "succeeds". */
   typescript: {
     ignoreBuildErrors: true,
   },
